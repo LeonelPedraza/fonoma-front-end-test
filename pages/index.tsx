@@ -11,20 +11,9 @@ import { Form, Label, LabelError, SendFormButton, Sendform } from '../components
 import { ConvertionResult, Header } from '../components/header'
 import { CurrencySelect, SelectCurrencyContainer, SelectCurrencySection } from '../components/selectCurrency'
 import { AmountInput, AmountSecion } from '../components/amount'
+import { ConvertionData, IProps } from '@/lib/types'
 
-
-
-interface IProps {
-  coins: [] | null
-}
-
-type ConvertionData = {
-  from: string,
-  to: string,
-  amount: number
-}
-
-function Home({ coins }: IProps) {
+export default function Home({ coins }: IProps) {
 
   const convertionSchema = yup.object({
     amount: yup.number().min(1, 'Amount must by grater than 0').required('Please insert a number value')
@@ -103,10 +92,9 @@ function Home({ coins }: IProps) {
     </>
   )
 }
-export default Home
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps = async () => {
   const res = await axiosFetch('/symbols')
-  const data = Object.entries(res.data.symbols)
-  return {props: { coins: data }}
+  const coins = Object.entries(res.data.symbols)
+  return {props: { coins }}
 }
