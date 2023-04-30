@@ -1,0 +1,401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` Should render homepage unchanged 1`] = `
+<div>
+  <main
+    class="sc-bgqQcB gGNHbj"
+  >
+    <form
+      class="sc-gTRrQi gLAJmf"
+    >
+      <h1
+        class="sc-gxYJeL hRdfyV"
+      >
+        Exchange rate calculator
+      </h1>
+      <div
+        class="sc-ispOId cAbXnt"
+      >
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            From:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            id="select-coin-from"
+            name="from"
+          />
+        </div>
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            To:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            data-testid="selectCoin"
+            name="to"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-kuWgmH cpPOIM"
+      >
+        <label
+          class="sc-fFGjHI kDjevi"
+        >
+          Amount:
+        </label>
+        <input
+          class="sc-duSInm gFBLF"
+          min="1"
+          name="amount"
+          placeholder="Amount"
+          step="any"
+          type="number"
+        />
+        <label
+          class="sc-fFGjHI sc-dicizt kDjevi hqhyWF"
+        />
+      </div>
+      <div
+        class="sc-ewnqHT jPedlw"
+      >
+        <button
+          class="sc-iVCKna jEIhLQ"
+          type="submit"
+        >
+          Convert
+        </button>
+      </div>
+    </form>
+  </main>
+</div>
+`;
+
+exports[` renders homepage unchanged 1`] = `
+<div>
+  <main
+    class="sc-bgqQcB gGNHbj"
+  >
+    <form
+      class="sc-gTRrQi gLAJmf"
+    >
+      <h1
+        class="sc-gxYJeL hRdfyV"
+      >
+        Exchange rate calculator
+      </h1>
+      <div
+        class="sc-ispOId cAbXnt"
+      >
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            From:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            id="select-coin-from"
+            name="from"
+          />
+        </div>
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            To:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            data-testid="selectCoin"
+            name="to"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-kuWgmH cpPOIM"
+      >
+        <label
+          class="sc-fFGjHI kDjevi"
+        >
+          Amount:
+        </label>
+        <input
+          class="sc-duSInm gFBLF"
+          min="1"
+          name="amount"
+          placeholder="Amount"
+          step="any"
+          type="number"
+        />
+        <label
+          class="sc-fFGjHI sc-dicizt kDjevi hqhyWF"
+        />
+      </div>
+      <div
+        class="sc-ewnqHT jPedlw"
+      >
+        <button
+          class="sc-iVCKna jEIhLQ"
+          type="submit"
+        >
+          Convert
+        </button>
+      </div>
+    </form>
+  </main>
+</div>
+`;
+
+exports[`Render home page renders homepage unchanged 1`] = `
+<div>
+  <main
+    class="sc-bgqQcB gGNHbj"
+  >
+    <form
+      class="sc-gTRrQi gLAJmf"
+    >
+      <h1
+        class="sc-gxYJeL hRdfyV"
+      >
+        Exchange rate calculator
+      </h1>
+      <div
+        class="sc-ispOId cAbXnt"
+      >
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            From:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            id="select-coin-from"
+            name="from"
+          />
+        </div>
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            To:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            data-testid="selectCoin"
+            name="to"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-kuWgmH cpPOIM"
+      >
+        <label
+          class="sc-fFGjHI kDjevi"
+        >
+          Amount:
+        </label>
+        <input
+          class="sc-duSInm gFBLF"
+          min="1"
+          name="amount"
+          placeholder="Amount"
+          step="any"
+          type="number"
+        />
+        <label
+          class="sc-fFGjHI sc-dicizt kDjevi hqhyWF"
+        />
+      </div>
+      <div
+        class="sc-ewnqHT jPedlw"
+      >
+        <button
+          class="sc-iVCKna jEIhLQ"
+          type="submit"
+        >
+          Convert
+        </button>
+      </div>
+    </form>
+  </main>
+</div>
+`;
+
+exports[`Render homepage Should render homepage 1`] = `
+<div>
+  <main
+    class="sc-bgqQcB gGNHbj"
+  >
+    <form
+      class="sc-gTRrQi gLAJmf"
+    >
+      <h1
+        class="sc-gxYJeL hRdfyV"
+      >
+        Exchange rate calculator
+      </h1>
+      <div
+        class="sc-ispOId cAbXnt"
+      >
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            From:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            id="select-coin-from"
+            name="from"
+          />
+        </div>
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            To:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            data-testid="selectCoin"
+            name="to"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-kuWgmH cpPOIM"
+      >
+        <label
+          class="sc-fFGjHI kDjevi"
+        >
+          Amount:
+        </label>
+        <input
+          class="sc-duSInm gFBLF"
+          min="1"
+          name="amount"
+          placeholder="Amount"
+          step="any"
+          type="number"
+        />
+        <label
+          class="sc-fFGjHI sc-dicizt kDjevi hqhyWF"
+        />
+      </div>
+      <div
+        class="sc-ewnqHT jPedlw"
+      >
+        <button
+          class="sc-iVCKna jEIhLQ"
+          type="submit"
+        >
+          Convert
+        </button>
+      </div>
+    </form>
+  </main>
+</div>
+`;
+
+exports[`Render homepage unchanged Should render homepage unchanged 1`] = `
+<div>
+  <main
+    class="sc-bgqQcB gGNHbj"
+  >
+    <form
+      class="sc-gTRrQi gLAJmf"
+    >
+      <h1
+        class="sc-gxYJeL hRdfyV"
+      >
+        Exchange rate calculator
+      </h1>
+      <div
+        class="sc-ispOId cAbXnt"
+      >
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            From:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            id="select-coin-from"
+            name="from"
+          />
+        </div>
+        <div
+          class="sc-kcuKUB kIUYkV"
+        >
+          <label
+            class="sc-fFGjHI kDjevi"
+          >
+            To:
+          </label>
+          <select
+            class="sc-dcrmVg kgKaAH"
+            data-testid="selectCoin"
+            name="to"
+          />
+        </div>
+      </div>
+      <div
+        class="sc-kuWgmH cpPOIM"
+      >
+        <label
+          class="sc-fFGjHI kDjevi"
+        >
+          Amount:
+        </label>
+        <input
+          class="sc-duSInm gFBLF"
+          min="1"
+          name="amount"
+          placeholder="Amount"
+          step="any"
+          type="number"
+        />
+        <label
+          class="sc-fFGjHI sc-dicizt kDjevi hqhyWF"
+        />
+      </div>
+      <div
+        class="sc-ewnqHT jPedlw"
+      >
+        <button
+          class="sc-iVCKna jEIhLQ"
+          type="submit"
+        >
+          Convert
+        </button>
+      </div>
+    </form>
+  </main>
+</div>
+`;
