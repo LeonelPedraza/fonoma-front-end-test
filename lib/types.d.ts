@@ -7,3 +7,4 @@ export type ConvertionData = {
     to: string | null,
     amount: number | null
 }
+const a = 'a'
