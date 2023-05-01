@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { useState } from 'react'
 import Head from 'next/head'
-import { GetServerSideProps } from 'next'
+import { GetServerSideProps, GetStaticPropsContext } from 'next'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 
@@ -13,7 +13,7 @@ import { CurrencySelect, SelectCurrencyContainer, SelectCurrencySection } from '
 import { AmountInput, AmountSecion } from '../components/amount'
 import { ConvertionData, IProps } from '@/lib/types'
 
-export default function Home({ coins }: IProps) {
+function Home({ coins }: IProps) {
 
   const convertionSchema = yup.object({
     amount: yup.number().min(1, 'Amount must by grater than 0').required('Please insert a number value')
@@ -93,8 +93,15 @@ export default function Home({ coins }: IProps) {
   )
 }
 
-export const getServerSideProps = async () => {
+export async function getStaticProps(context: GetStaticPropsContext) {
   const res = await axiosFetch('/symbols')
   const coins = Object.entries(res.data.symbols)
   return {props: { coins }}
 }
+// export async function getServerSideProps() {
+//   const res = await axiosFetch('/symbols')
+//   const coins = Object.entries(res.data.symbols)
+//   return {props: { coins }}
+// }
+
+export default Home
