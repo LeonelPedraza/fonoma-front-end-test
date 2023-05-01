@@ -25,7 +25,6 @@ function Home({ coins }: IProps) {
   const [convertion, setConvertion] = useState(null)
 
   const sendData = handleSubmit(async (data: ConvertionData) => {
-    console.log('object')
     const res = await axiosFetch(`/convert?to=${data.to}&from=${data.from}&amount=${Number(data.amount)}`)
     const resData = res.data.result
     setConvertion(resData)
