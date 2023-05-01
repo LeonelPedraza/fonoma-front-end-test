@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { useState } from 'react'
 import Head from 'next/head'
-import { GetServerSideProps, GetStaticPropsContext } from 'next'
+import { GetServerSideProps, GetServerSidePropsContext, GetStaticPropsContext } from 'next'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 
@@ -93,15 +93,10 @@ function Home({ coins }: IProps) {
   )
 }
 
-export async function getStaticProps(context: GetStaticPropsContext) {
+export async function getServerSideProps(context: GetServerSidePropsContext) {
   const res = await axiosFetch('/symbols')
   const coins = Object.entries(res.data.symbols)
   return {props: { coins }}
 }
-// export async function getServerSideProps() {
-//   const res = await axiosFetch('/symbols')
-//   const coins = Object.entries(res.data.symbols)
-//   return {props: { coins }}
-// }
 
 export default Home
